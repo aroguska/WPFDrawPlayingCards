@@ -10,7 +10,7 @@ namespace WPFCards
     {
         Deck cards = new Deck();
         List<Cards> listOfMyCards = new List<Cards>();
-        Random random = new Random();
+        readonly Random random = new Random();
 
         public MainWindow()
         {
@@ -68,7 +68,6 @@ namespace WPFCards
                 int index = random.Next(0, cards.Count);
                 listOfMyCards.Add(cards[index]);
                 cards.RemoveAt(index);
-
                 LeftDeck.Items.Clear();
 
                 for (int i = 0; i < cards.Count; i++)
@@ -100,7 +99,7 @@ namespace WPFCards
         }
         private void Close(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void SaveFile(object sender, RoutedEventArgs e)
@@ -129,6 +128,5 @@ namespace WPFCards
                 }
             }
         }
-
     }
 }

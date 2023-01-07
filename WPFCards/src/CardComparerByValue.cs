@@ -6,17 +6,17 @@ namespace WPFCards
     {
         public int Compare(Cards x, Cards y)
         {
-            if(x.suit > y.suit)
+            if (x.Suit > y.Suit)
                 return 1;
-            if(x.suit < y.suit)
+            if (x.Suit < y.Suit)
                 return -1;
-            else 
-                if(x.value > y.value)
-                     return 1;   
-                else if(x.value < y.value)
-                    return -1;
-                else
-                    return 0;
+            else
+                if (x.Value > y.Value)
+                return 1;
+            else if (x.Value < y.Value)
+                return -1;
+            else
+                return 0;
         }
     }
 }

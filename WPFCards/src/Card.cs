@@ -9,7 +9,7 @@ namespace WPFCards
     class Cards : TextBlock, IComparable<Cards>
     {
 
-        private Dictionary<Suits, string> suitDecoder = new Dictionary<Suits, string>()
+        private readonly Dictionary<Suits, string> suitDecoder = new Dictionary<Suits, string>()
         {
             {Suits.Clubs, "\u2663"},
             {Suits.Hearts, "\u2665"},
@@ -18,22 +18,21 @@ namespace WPFCards
         };
         public Cards(Values value, Suits suit)
         {
-            this.value = value;
-            this.suit = suit;
+            Value = value;
+            Suit = suit;
 
             Inlines.Clear();
             Inlines.Add(new Run($"{value} of "));
-            if (suit == Suits.Hearts || suit == Suits.Diamonds) {
+            if (suit == Suits.Hearts || suit == Suits.Diamonds)
                 Inlines.Add(new Run($"{suitDecoder[suit]}") { Foreground = Brushes.Red });
-            }
             else
                 Inlines.Add(new Run($"{suitDecoder[suit]}"));
         }
 
-        public Values value { get; private set; }   
+        public Values Value { get; private set; }   
 
-        public Suits suit { get; private set; }
-        public string Name { get { return $"{value} of {suitDecoder[suit]}"; } }
+        public Suits Suit { get; private set; }
+        public string Name { get { return $"{Value} of {suitDecoder[Suit]}"; } }
 
         public int CompareTo(Cards other)
         {
