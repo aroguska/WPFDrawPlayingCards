@@ -1,0 +1,57 @@
+Left Deck
+
+1. Three of ♦
+2. Two of ♠
+3. Nine of ♣
+4. Ace of ♥
+5. Ten of ♥
+6. King of ♣
+7. Six of ♠
+8. Eight of ♦
+9. Five of ♣
+10. Jack of ♠
+11. Queen of ♣
+12. Eight of ♣
+13. Ten of ♦
+14. Jack of ♦
+15. Six of ♦
+16. Five of ♠
+17. Queen of ♥
+18. Two of ♣
+19. Two of ♥
+20. Jack of ♥
+21. Ace of ♣
+22. Five of ♦
+23. Ten of ♠
+24. Six of ♣
+25. Ace of ♦
+26. Nine of ♠
+27. Four of ♣
+28. Three of ♣
+29. King of ♥
+30. Three of ♠
+31. Jack of ♣
+32. Seven of ♦
+33. Seven of ♣
+34. Seven of ♠
+35. Four of ♥
+36. Three of ♥
+37. Eight of ♥
+38. Five of ♥
+39. Four of ♠
+40. King of ♠
+41. Nine of ♦
+42. Six of ♥
+43. Eight of ♠
+44. Nine of ♥
+45. Ace of ♠
+46. King of ♦
+
+Right Deck
+
+1. Queen of ♦
+2. Ten of ♣
+3. Two of ♦
+4. Four of ♦
+5. Queen of ♠
+6. Seven of ♥
